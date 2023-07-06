@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 목록페이지</title>
+    <style>
+
+        ul,ol,li {list-style:none; font-size:20px;}
+        a { text-decoration:none; color:blue; font-size:20px;}
+        .list_area {padding:200px 0;}
+        .list_area .brd_flex {display:flex; justify-content:center;}
+        .list_area .brd_flex .brd {width:1200px; height:100px;}
+        .list_area .brd_flex .brd .title {color:rgb(60, 161, 60); font-size:30px; font-weight:bold; text-align:center; margin:30px 0;}
+        #searchForm {display:flex; justify-content:flex-end;}
+        .search_size #inputText {height:20px;}
+        .search_size #searchBtn {font-size:20px;}
+
+        .listWrap { width:1200px; margin:0 auto;}
+        .lists {width:100%; height:200px; border:1px solid #000; margin: 50px 0;}
+
+        .paging {display:flex; justify-content:center; margin:50px 0;}
+        .paging li {margin: 0 20px;}
+        .highlight a { color: red;}
+        .go_board {display:flex; justify-content:center;}
+
+
+        
+    </style>
+</head>
+<body>
+    <%- include("header",{title:"",hClass:"",css:["style.css"]}) %>
+    <div class="list_area">
+        <div class="brd_flex">
+            <div class="brd">
+                <h2 class="title">게시판</h2>
+                <form id="searchForm" action="/search" method="get">
+                    <div class="search_size">
+                        <input id="inputText" type="text" name="inputText" value="<%- text %>">
+                        <button id="searchBtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="listWrap">
+            <% for(let i=0; i<data.length; i++){%>
+                <div class="lists">
+                    <div><%- data[i].num %></div>
+                    <a href="/board/detail/<%- data[i].num %>">
+                        <h2><%- data[i].title %></h2>
+                        <p><%- data[i].author %></p>
+                    </a>
+                </div>
+            <% } %>
+        </div>
+        <!-- 페이징 번호 생성된 구간  처음 이전 1,2,3 다음 마지막-->
+        <ul class="paging">
+            <!-- 이전 버튼 생성작업 페이지 시작번호가 그룹의 총 갯수보다 크다면 이전버튼 생성-->
+            <% if(blockStart > totalBlock) { %>
+                <li><a href="?page=<%- blockStart - 1 %>">이전</a></li>
+            <% } %>
+
+            <!-- 페이지 시작번호값서부터 끝번호까지 li태그 생성 -->
+            <% for(let i=blockStart; i <= blockEnd; i++) { %>
+                <!-- 현재 보고있는 페이지 번호인 경우 색상 활성화-->
+                <% if(pageNumber == i) { %>
+                    <li class="highlight"><a href="?page=<%- i %>"><%- i %></a></li>
+                <% } else { %>
+                    <li><a href="?page=<%- i %>"><%- i %></a></li>
+                <% } %>
+            <% } %>
+
+            <!-- 다음버튼 생성작업 -->
+            <% if(blockNum < totalBlock) { %>
+                <li><a href="?page=<%- blockEnd + 1 %>">다음</a></li>
+            <% } %>
+        </ul>
+        <a class="go_board" href="/board/insert">게시글 등록페이지</a>
+    </div>
+    <%- include("footer") %>
+
+    <script src="js/search.js"></script>
+</body>
+</html>

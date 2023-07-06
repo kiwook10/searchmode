@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css관련 파일 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+
+    <% if(css.length !== 0) {%>
+        <% for(let i=0; i<css.length; i++){%>
+            <link rel="stylesheet" href="/style/<%- css[i] %>">
+
+        <%  } %>
+    <% } %>
+
+</head>
+<body>
+    <div id="header">
+        <div class="center">
+            <div class="logo">
+                <a href="/"><img src="/img/logo1.png"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="/medical_department">진료과목</a></li>
+                <li><a href="#">진료안내</a></li>
+                <li><a href="#">병원소개</a></li>
+                <li><a href="/career">원장약력</a></li>
+                <li><a href="#">병원안내</a></li>
+            </ul>
+            <ul class="h-util">
+                <% if(login) {%>
+                    <li><a href="/mypage"><%- login.memberid %></a></li>
+                    <li><a href="/logout">로그아웃</a></li>
+                <% } else {%>
+                    <li><a href="/login"><i class="fas fa-unlock-alt"></i>로그인</a></li>
+                    <li><a href="/join">회원가입</a></li>
+                <% } %>
+            </ul>
+            <a class="board" href="/board/list">게시판</a>
+        </div>
+        <div class="ham">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
+    <div id="ham_menu">
+        <div class="hamTop">
+            <a href="/login">로그인</a>
+            <i class="fas fa-times ham_close"></i>
+        </div>
+        <ul class="hamDepth1">
+            <li><a href="/">메인</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">센터소개</a></li>
+                    <li><a href="#">조직도</a></li>
+                    <li><a href="#">사업안내</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">서브메뉴1</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">서브메뉴1</a></li>
+                    <li><a href="#">서브메뉴1서브메뉴1</a></li>
+                </ul>
+            </li>
+            <li><a href="#">서브메뉴1</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">서브메뉴1</a></li>
+                    <li><a href="#">서브메뉴1</a></li>
+                </ul>
+            </li>
+            <li><a href="#">서브메뉴1</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">서브메뉴1</a></li>
+                    <li><a href="#">서브메뉴1</a></li>
+                </ul>
+            </li>
+            <li><a href="#">서브메뉴1</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">서브메뉴1</a></li>
+                    <li><a href="/faq.html">서브메뉴1서브메뉴1</a></li>
+                    <li><a href="#">서브메뉴1</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="topBtn">
+        <a href="#"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

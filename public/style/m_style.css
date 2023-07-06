@@ -1,0 +1,834 @@
+/* 1280px */
+@media screen and (max-width:1280px){
+    
+    
+    /* 헤더영역 */
+    #header {
+        width:100%;
+        border-bottom: 1px solid #134aa9;
+    
+    }
+    #header .center {
+        width:100%; height:100px; margin:0 auto; padding:0 5%;
+    }
+    /* 헤더 로고 */
+    #header .center .logo { width:30%;}
+    #header .center .logo a img {
+        width:60%;
+    }
+    
+    /* 헤더 gnb */
+    #header .center .gnb {
+        width:65%; margin-left: 5%;
+        display:none;
+    }
+    .gnb > li {
+        padding: 0 3%;
+    
+    }
+
+    #header .center .board{display:none;}
+
+    /* 헤더 h-util 부분 */
+    .h-util { display:none;}
+    
+    
+    .ham {
+        display:block;
+    }
+    
+    /* ham-menu */
+    #ham_menu {
+        position:fixed; z-index: 4;
+        padding:2% 5%;
+        top:0; right:-30%;
+        width:20%;
+        height:100%;
+        background-color: #134aa9;
+    }
+    
+    
+    /* top버튼 */
+    
+    /* 컨테이너 */
+    /* visual area star! */
+    #visual { padding-top: 130px;}
+    #visual .center { width:90%; margin:0 auto 20px;}
+    .visual {
+        width: 100%;
+        height: 600px;
+      }
+    .swiper-slide {
+        display: flex; justify-content: space-around; align-items: center;
+    }
+    
+      /* visual area end! */
+    
+      /* montyly are start! */
+      #monthly {
+          background-color: #134aa9;
+          padding:100px 0;
+      }
+      #monthly .monthlyTop {
+        padding:0 0 50px; text-align: center;
+      }
+    
+      #monthly .monthlyTop h2 {
+        font-size: 45px; font-family: 'GmarketSansBold';
+        color:#fff; line-height: 50px; 
+      }
+      #monthly .monthlyTop h4 {
+        font-size: 15px; color: #fff;
+        margin: 30px 0;
+      }
+       /* monthly swiper area  */
+      .monthlyBot .monthly {
+          width:100%; padding-top: 50px;
+      }
+      .monthlyBot .monthly .swiper-slide {
+          display: flex; flex-direction: column; align-items: center;
+          transition:all 0.7s;
+    
+      }
+      .monthlyBot .monthly .swiper-slide .monthlyImg{
+          overflow: hidden;
+          border-radius: 20px;
+          width:250px;
+      }
+      .monthlyBot .monthly .swiper-slide .monthlyImg img {
+          width:100%;
+      }
+      .monthlyBot .monthly .swiper-slide .monthlyImg .monthlyBg{
+           opacity:0; transition:all 0.7s;
+      }
+     .cate, .subject, .writer { display: none;}
+    
+      /* monthly 활성화 영역 */
+     
+        /* monthly area end! */
+    
+    
+      /* space area start! */
+      #space { background-color: #fff;}
+      #space .center {
+          width:100%; margin:110px auto;
+          padding:0 5%;
+         
+      }
+    
+      #space .center .spaceBot .spaceWrap {
+          width:50%; padding-right:5%;
+      }
+    
+      .spaceInfo > li a {
+          display: block; padding:20px 20px; margin-right: 9px;
+          border: 1px solid #134aa9; border-radius: 40px;
+          color:#134aa9; font-size: 17px; font-weight: bold;
+          transition: all .7s;
+      }
+    
+      /* space area end! */
+    
+    
+      /* place area star! */
+      #place {padding: 0 0 80px;}
+      #place .center {
+          width:100%; margin:0 auto;
+          padding:0 5%;
+      }
+      .placeTop {
+        display: flex; flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      #place .center .placeTop .placeTopWrap h2 {
+        font-size: 45px; font-family: 'GmarketSansBold';
+        color:#000; line-height: 50px; 
+      }
+    
+      #place .center .placeTop .placeTopWrap h4 {
+        font-size: 15px; color: #000;
+        margin: 30px 0;
+      }
+      #place .center .placeWrap {
+          display: flex; justify-content: space-between; align-items: center;
+      }
+      #place .center .placeWrap .placeImg {
+          width:45%; margin-right:5%;
+      }
+      #place .center .placeWrap .placeImg img {
+          width:100%;
+      }
+      #place .center  .placeWrap .placeClick {width:50%; padding-left: 40%;}
+    
+      /* sns area start! */
+      #sns { background-color: #eff4fe;}
+      #sns .center {width:100%; margin:0 auto; padding:200px 5% 100px;}
+      /* sns area end! */
+    
+      /* news area start! */
+      #news { background-color: #eff4fe;}
+      #news .center { width:100%; margin:0 auto; padding:30px 5% 100px;}
+    
+      /* news area end! */
+    
+      /* footer area start! */
+      #footer { background-color: #333333; padding:40px 0 70px;}
+      #footer .center { width:100%; margin:0 auto; padding:0 5%;}
+      #footer .fTop {
+          display: flex; justify-content: space-between; align-items: center;
+          flex-wrap: wrap;
+      }
+      .fTop .fNotice {display: flex;}
+      .fTop .fNotice > li {
+          margin-right:20px; line-height: 50px;
+      } 
+      .fTop .fNotice > li a {
+          display: block; color:#fff;
+          font-size: 15px;
+      }
+      .fTop > div { display: flex; justify-content: space-between; align-items: center;}
+      .fTop > div .fSns { display: flex; }
+      .fSns > li > a > .fab , .fSns > li > a > .fas { color:#fff; margin-right: 20px; font-size: 25px;}
+    
+      .fTop select {
+          padding:10px 20px; margin-left: 30px;
+          background-color: transparent; border:1px solid #5e5e5e;
+          color:#5e5e5e; font-size: 15px;
+      }
+      .fTop select > span .fas { margin-right: 5px; }
+      .fTop select option { background-color: #333333; color:#5e5e5e;}
+    
+      .fTop::after{
+          content: ""; display: block; width:100%; height:1px;
+          background-color: #5e5e5e;
+          margin: 30px 0;
+      }
+      .fBot { display: flex;}
+      .fBot .fLogo{ width:9%; margin-right:7%;}
+      .fBot .fLogo a img {width:136px;}
+      .fBot .fInfo {width:84%;}
+      .fBot .fInfo > p {font-size: 14px; color:#fff; margin-bottom: 14px;}
+      /* footer area end! */
+    
+    
+      /* faq */
+      /* map */
+    
+    
+    
+    }
+    
+    /* 1024px */
+    @media screen and (max-width:1024px){
+        /* 헤더영역 */
+    /* 헤더 로고 */
+    #header .center .logo { width:30%; margin:1% 0;}
+    #header .center .logo a img {
+        width:70%;
+    }
+    
+    /* 헤더 gnb */
+    #header .center .gnb {
+        width:65%; margin-left: 5%;
+        display: none;
+    }
+    
+    .gnb > li {
+        padding: 0 3%;
+        position: relative; 
+    }
+    .gnb > li > a {
+      
+        font-size: 17px; font-family: 'GmarketSansBold';
+     
+    }
+    
+    /* depth2 메뉴 */
+    
+    /* 헤더 h-util 부분 */
+    
+    /* 헤더 ham-데스크탑에서는 안보임 */
+    
+    
+    /* ham-menu */
+    #ham_menu {
+        position:fixed; z-index: 4;
+        padding:2% 5%;
+        top:0; right:-3%;
+        width:60%;
+        height:100%;
+        background-color: #134aa9;
+    }
+    
+    /* top버튼 */
+    
+    
+    /* 컨테이너 */
+    /* visual area star! */
+    #visual { padding-top:80px;}
+    /* visual area end! */
+    
+      /* montyly are start! */
+        
+      /* monthly area end! */
+    
+    
+      /* space area start! */
+     
+      #space .center .spaceBot {
+            display: flex; flex-wrap: wrap; align-items: center;
+      }
+    
+      #space .center .spaceBot .spaceWrap {
+          width:100%; padding-right:0%;
+      }
+      .spaceInfo {
+          display: flex; justify-content: center; 
+          margin: 0 15px 20px; 
+        }
+      .spaceInfo > li a {
+          display: block; padding:15px 15px; margin-right: 9px;
+          border: 1px solid #134aa9; border-radius: 40px;
+          color:#134aa9; font-size: 20px; font-weight: bold;
+          transition: all .7s;
+      }
+      .spaceInfo > li.on a {
+        background-color: #134aa9; color:#fff;
+    }
+      .spaceInfo > li a:hover {
+          background-color: #134aa9; color:#fff;
+      }
+    
+      #space .center .spacePic {
+          width: 100%; padding:5% 10% 0;
+          /*position:relative;*/
+      }
+      #space .center .spacePic > div {
+          /* position: absolute; top:70%; left: 30%; 
+          transform: translate(-50%, -50%); */
+          overflow: hidden;
+          border-radius: 20px;
+          display: none;
+      }
+      #space .center .spacePic > div:nth-child(1){
+          display: block;
+      }
+      #space .center .spacePic > div img {width:100%;}
+      /* space area end! */
+    
+    
+      /* place area star! */
+      
+    
+      /* sns area start! */
+      #sns { background-color: #eff4fe;}
+      #sns .center {padding:100px 5% 80px;}
+      #sns .center .snsTop { text-align: center;}
+      #sns .center .snsTop h2 {
+        font-size: 45px; font-family: 'GmarketSansBold';
+        color:#000; line-height: 50px; 
+      }
+    
+      
+      #sns .center .snsBot {
+          display: flex; flex-wrap: wrap;
+      }
+      #sns .center .snsBot .thumBox {
+          width:31.333333%; margin:2% 1%; border-radius: 25px;
+     
+      }
+      /* news area star! */
+      #news .center .newsBot .newsBox h3 {
+        font-size: 25px; width:100%; line-height: 40px;
+        color:#000;
+        margin:35px 0; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        max-height:80px; /* webkit 외 브라우저 대응, line-height*line 수 */
+    }
+    #news .center .newsBot .newsBox:hover h3{
+        color:#134aa9;
+    }
+    
+    
+    #news .center .newsBot .newsBox .content {
+        font-size: 17px; color:#777; width:100%; line-height: 27px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        max-height: 54px; /* webkit 외 브라우저 대응, line-height*line 수 */
+    
+    }
+    
+    #news .center .newsBot .newsBox .date{
+      font-size: 12px; color:#888;
+      margin:40px 0;
+    }
+    
+    #news .center .newsBot .newsBox .fas {
+        position: absolute; bottom:40px; right:40px;
+        color:#777; font-size: 40px;
+        transition: all .5s;
+    }
+    #news .center .newsBot .newsBox:hover .fas{
+        color:#134aa9; transform: rotate(90deg);
+    }
+    
+    
+    
+    
+      /* news area end! */
+    
+      /* footer area start! */
+      #footer { background-color: #333333; padding:40px 0 70px;}
+    
+      #footer .fTop {
+          display: flex; justify-content: space-between; align-items: center;
+          flex-wrap: wrap;
+      }
+      .fTop .fNotice {display: flex; width:100%;}
+      .fTop .fNotice > li {
+          margin-right:20px; line-height: 50px;
+      } 
+      .fTop .fNotice > li a {
+          display: block; color:#fff;
+          font-size: 15px;
+      }
+      .fTop .fSite { display: flex; justify-content: space-between; align-items: center; width:100%;}
+      .fTop .fSite .fSns { display: flex; width:50%;}
+      .fSns > li > a > .fab , .fSns > li > a > .fas { color:#fff; margin-right: 20px; font-size: 25px;}
+      .fTop .familySite {width:35%; margin-left: 10%;}
+      .fTop select {
+          display: inline-block;
+          padding:10px 20px; 
+          background-color: transparent; border:1px solid #5e5e5e;
+          color:#5e5e5e; font-size: 15px;
+      }
+      .fTop select > span .fas { margin-right: 5px; }
+      .fTop select option { background-color: #333333; color:#5e5e5e;}
+    
+      .fTop::after{
+          content: ""; display: block; width:100%; height:1px;
+          background-color: #5e5e5e;
+          margin: 30px 0;
+      }
+      .fBot { display: flex;}
+      .fBot .fLogo{ width:20%; margin-right:5%;}
+      .fBot .fLogo a img {width:100%;}
+      .fBot .fInfo {width:75%;}
+      .fBot .fInfo > p {font-size: 14px; color:#fff; margin-bottom: 14px;}
+      /* footer area end! */
+    
+        /* faq */
+    
+        .q-container .center { width:100%; margin:0 auto; padding: 0 5%;}
+        .q-container .h-faq .faqTab { display: flex; justify-content: center;}
+        .q-container .h-faq .faqTab > li { margin: 30px 15px 0; }
+        .q-container .h-faq .faqTab > li a {
+            display: inline-block; padding:10px 20px; border-radius: 35px;
+            border:2px solid #fff;
+            background-color: #134aa9; color:#fff;
+            font-size: 20px;
+            opacity: .5;
+        }
+        .q-container .h-faq ul > li.on a {
+            border:2px solid #fff;
+            background-color: #fff; color:#134aa9;
+            font-size: 22px;
+            opacity: 1;
+        }
+    
+        .faqWrap .question > li .cate { 
+            display: inline-block; padding:10px 20px; margin:0 30px 0 50px;
+            border: 1px solid #134aa9; border-radius: 30px;
+            color:#134aa9; font-size: 14px;
+        }
+        .faqWrap .question > li .sub {
+            font-size: 22px; color:#000; font-weight: bold;
+        }
+    
+        /* map */
+    
+    
+    
+    }
+    
+    /* 768px */
+    @media screen and (max-width:768px){
+    
+    /* mVisual */
+    .swiper-slide .swiperText h3{
+        font-size: 25px;
+        margin-bottom: 25px; 
+    }
+    .swiper-slide .swiperText h2{
+        line-height: 59px;
+        font-size: 52px;
+    }
+    
+    /* space */
+    #space .center .spacePic {
+        width: 100%; padding:5% 2% 0;
+    }
+    
+    /* place */
+    #place .center .placeWrap .placeImg {
+        width:65%; margin-right:0%;
+    }
+    #place .center .placeWrap .placeImg img {
+        width:100%;
+    }
+    #place .center  .placeWrap .placeClick {width:25%; padding-left: 10%;}
+    
+    /* sns */
+    #sns .center .snsBot .thumBox {
+        width:48%; margin:2% 1%; border-radius: 25px;
+    
+    }
+    
+    /* news */
+    #news .center .newsBot .newsBox {
+        background-color: #fff;
+        padding: 50px;
+        width: 100%;
+        margin: 5% 0% 0%;
+        position: relative;
+        transition: all .5s;
+    }
+    
+    /* foot */
+    .fBot { display: flex;}
+    .fBot .fLogo{display: none;}
+    .fBot .fInfo {width:100%;}
+    .fBot .fInfo > p {font-size: 14px; color:#fff; margin-bottom: 14px; line-height: 20px;}
+    
+    
+    /* faq */
+    .center { width:100%; margin:0 auto; padding: 0 3%;}
+    .q-container {padding-top:84px;}
+    .q-container .h-faq h2 {
+        font-size: 45px; font-family: 'GmarketSansBold';
+        color:#fff; line-height: 50px; 
+      }
+    .q-container .h-faq h3 {
+          font-size: 25px; color: #fff; line-height: 20px;
+          margin: 30px 0;
+      }
+     
+      .q-container .h-faq .faq-index {
+          position: absolute; top:50px; right:50px;
+          display: flex; align-items: center;
+      }
+      .q-container .h-faq .faq-index {
+          color:#fff; font-size: 18px;
+      }
+    
+    
+      .faqWrap { margin: 50px 0 100px;}
+      .faqWrap .question {
+          border-top: 2px solid #000;
+          display:none;
+      }
+      .faqWrap .question:nth-child(1) {
+          display: block;
+      }
+      .faqWrap .question > li {
+          border-bottom: 1px solid #000;
+          padding-top:60px;
+          position: relative;
+    
+      }
+    
+      .faqWrap .question .bg { padding-top: 60px;}
+      .faqWrap .question > li .capital {
+         padding-left:0px;
+          color:#ddd;  font-family: 'GmarketSansBold';
+          font-size: 45px;
+      }
+    
+      .faqWrap .question > li .cate { 
+          display: inline-block; padding:10px 20px; margin:0 20px 0 10px;
+          border: 1px solid #134aa9; border-radius: 30px;
+          color:#134aa9; font-size: 14px;
+      }
+      .faqWrap .question > li .sub {
+          display: inline-block;  margin:0 1% 0 0;
+          font-size: 20px; color:#000; font-weight: bold;
+      }
+      .faqWrap .question > li .arrow .fas {
+        position: absolute; top:73px; right:20px;
+        color:#000; font-size:23px;
+    
+      }
+    
+      .faqWrap .question > li .capital1 {
+        color:#ddd;  font-family: 'GmarketSansBold';
+        font-size: 45px; margin-left: 30px;
+      }
+      .faqWrap .question > li .answer li p { 
+          padding:0 25px 0 60px; font-size: 18px;
+          line-height: 28px
+        }
+      .answer {display: none;}
+    
+      
+      /* map */
+      .m-container .center { width:100%; margin:0 auto; padding:2%;}
+      .c-findmapWrap .area { width:100%; margin-right: 0%;}
+      .c-findmapWrap .area ul { display: flex; justify-content: space-between;}
+      .c-findmapWrap .area ul > li {
+          width:18%;
+          margin: 0 1%;
+          position: relative;
+      }
+      .c-findmapWrap .area ul > li a {
+          display: block; width:100%; padding:17px 20px;
+          text-align: center;
+          background-color: #fff; border-radius: 25px;
+          color:#000; font-size: 17px;
+          transition: all .7s;
+      }
+      .c-findmapWrap .area ul > li a::after {
+          content: ""; display: inline-block; 
+          width:75%; height:2px; border-radius: 0%;
+          background-color: #134aa9;
+          position: absolute; top:75%; right:0px; left:50%; transform: translate(-50%, 50%);
+          opacity: 0;
+          transition: all .7s;
+      }
+      .c-findmapWrap .area ul > li.on a::after {
+          content: ""; display: inline-block; 
+          width:75%; height:2px; border-radius: 0%;
+          background-color: #134aa9;
+          position: absolute; top:75%; right:0px; left:50%; transform: translate(-50%, 50%);
+          opacity: 1;
+          transition: all .7s;
+    }
+      .c-findmapWrap .area ul > li:hover a {
+          box-shadow: 3px 3px 20px #ccc;
+          transform: translateY(-5px);
+      }
+      .c-findmapWrap .area ul > li:hover a::after { opacity: 1;}
+    
+    
+      #map { width:98%;  height:400px; margin:50px auto 0; }
+    
+    }
+    
+    /* 640px */
+    @media screen and (max-width:640px){
+    
+        #header .center .logo { width:50%; margin:2% 0;}
+        #header .center .logo a img { width:70%;}
+
+        #ham_menu {
+            position:fixed; z-index: 4;
+            padding:2% 5%;
+            top:0;
+            width:80%;
+            height:100%;
+            background-color: #134aa9;
+        }
+    
+    
+        /* visual area star! */
+        #visual { padding-top: 80px;}
+        #visual .center { width:100%; margin:0 auto 20px; padding:0 1%;}
+        .visual {
+            width: 100%;
+            height: 90vh;
+        }
+        .swiper-slide {
+            display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;
+        }
+        .swiper-slide .swiperText {
+            width:100%;
+            font-family: 'GmarketSansBold';
+            color:#134aa9;
+            padding-left:5%;
+        }
+        .swiper-slide .swiperText h3 {
+            font-size:20px;
+            margin-bottom: 25px;
+        }
+        .swiper-slide .swiperText h2 {
+            line-height: 45px;
+            font-size:35px;
+        }
+        .swiper-slide .swiperImg {width:100%;}
+        .swiper-slide .swiperImg img {width:100%;}
+        /* pagination */
+        .visual .swiper-pagination { transform: translateX(0%);}
+        .visual .swiper-pagination .swiper-pagination-bullet {
+            width:15px; height:15px; margin-right: 10px;
+        }
+    
+        #sns .center .snsTab > ul li{ margin:0 1% 50px; }
+        #sns .center .snsTab > ul li a {
+            display:block; padding:10px 15px; border-radius: 25px;
+            background-color: #fff; border:2px solid #134aa9;
+            color:#134aa9; font-size: 16px;
+            transition: all .7s;
+        }
+        #sns .center .snsBot .thumBox {
+            width:100%; margin:2% 0; border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+        }
+        .fTop .familySite {width:45%; margin-left: 5%;}
+    
+        /* montyly */
+        #monthly .monthlyTop h2 {
+            font-size: 40px; font-family: 'GmarketSansBold';
+            color:#fff; line-height: 40px; 
+          }
+          #monthly .monthlyTop h4 {
+            font-size: 15px; color: #fff;
+            margin: 20px 0;
+          }
+    
+        /* space */
+    
+        #space .center .spaceTop h2 {
+            font-size: 35px; font-family: 'GmarketSansBold';
+            color:#000; line-height: 40px; 
+        }
+        #space .center .spaceTop h4 {
+            font-size: 15px; color: #000;
+            margin: 20px 0;
+        }
+        .spaceInfo > li a {
+            display: block; padding:10px 7px; margin:0px 5px;
+            border: 1px solid #134aa9; border-radius: 25px;
+            color:#134aa9; font-size: 14px; font-weight: bold;
+            transition: all .7s;
+        }
+    
+        /* place */
+        #place .center .placeTop .placeTopWrap h2 {
+            font-size: 35px; font-family: 'GmarketSansBold';
+            color:#000; line-height: 40px; 
+          }
+        
+          #place .center .placeTop .placeTopWrap h4 {
+            font-size: 15px; color: #000;
+            margin: 20px 0;
+          }
+          #place .center .placeWrap .placeClick {
+            width: 25%;
+            padding-left: 0%;
+        }
+    
+        /* sns */
+          #sns .center .snsTop h2 {
+            font-size: 35px; font-family: 'GmarketSansBold';
+            color:#000; line-height: 40px; 
+          }
+          #sns .center .snsTop h4 {
+              font-size: 15px; color: #000; line-height: 20px;
+              margin: 20px 0;
+          }
+          #sns .center .snsTab > ul li a {
+            display:block; padding:7px 10px; border-radius: 25px;
+            background-color: #fff; border:2px solid #134aa9;
+            color:#134aa9; font-size: 14px;
+            transition: all .7s;
+        }
+    
+        /* news */
+        #news .center .newsTop h2 {
+            font-size: 35px; font-family: 'GmarketSansBold';
+            color:#000;
+          }
+    
+    
+    
+    
+    
+        /* faq */
+    
+        .q-container .h-faq h2 {
+            margin-left: 5%;
+            font-size: 35px; font-family: 'GmarketSansBold';
+            color:#fff; line-height: 50px; 
+        }
+        .q-container .h-faq h3 {
+            font-size: 17px; color: #fff; line-height: 20px;
+            margin: 30px 0 30px 3%;
+        }
+        .q-container .h-faq h3 a { color:#fff;  opacity: .5;}
+        .q-container .h-faq h3 a.on { color:#fff; opacity: 1;}
+        .q-container .h-faq h3 span { margin:0 20px;  opacity: .5;}
+        .q-container .h-faq .faq-index {
+            position: absolute; top:50px; right:0px; left:3%;
+            display: flex; align-items: center;
+            color:#fff; font-size: 15px;
+        }
+    
+    
+        .q-container .h-faq .faq-index span { margin:0 3px;}
+        .q-container .h-faq .faq-index .fas { color:#fff; font-size: 17px;}
+    
+        .q-container .h-faq .faqTab { display: flex;  flex-wrap: wrap; justify-content: center;}
+        .q-container .h-faq .faqTab > li { margin: 20px 1% 0;  width:48%; text-align: center;}
+        .q-container .h-faq .faqTab > li a {
+            display: inline-block; padding:10px 25px; border-radius: 25px;
+            border:2px solid #fff;
+            background-color: #134aa9; color:#fff;
+            font-size:17px;
+            opacity: .5;
+        }
+        .q-container .h-faq ul > li.on a {
+            border:2px solid #fff;
+            background-color: #fff; color:#134aa9;
+            font-size: 17px;
+            opacity: 1;
+          }
+        
+    
+        .faqWrap .question > li {
+            border-bottom: 1px solid #000;
+            padding-top:60px;
+            position: relative;
+    
+        }
+    
+        .faqWrap .question .bg { padding-top: 60px;}
+    
+        .faqWrap .question > li .cate { 
+            display: none; 
+        }
+        .faqWrap .question > li .sub {
+            margin-left: 2%; line-height: 30px;
+            font-size: 20px; color:#000; font-weight: bold;
+        }
+    
+        /* 지도영역 */
+    
+    
+    
+        /* foot */
+        .fTop .fNotice {display: flex; justify-content: space-between;}
+        .fTop .fNotice > li {
+            margin: 0 2px; line-height: 50px;
+        } 
+        .fTop .fNotice > li a {
+            display: block; color:#fff;
+            font-size: 12px;
+        }
+        .fSns > li > a > .fab , .fSns > li > a > .fas { color:#fff; margin-right: 15px; font-size: 22px;}
+        .fTop .familySite {width:50%; margin-left: 0%;}
+        .fTop .familySite select {
+            padding:10px 10px; margin-left: 5%;
+        }
+        .fTop select > span .fas { margin-right: 0px; }
+    
+    
+    
+    }
+    

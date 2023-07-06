@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 등록페이지</title>
+    <style>
+          ul,ol,li {list-style:none; }
+        a { text-decoration:none;}
+        .insert {padding:200px 0; display:flex; justify-content:center;}
+        #upload { width:1200px; display:flex; justify-content:space-between; flex-wrap:wrap;}
+        #upload > div{width:100%;}
+        #upload .in_area {display:flex; justify-content:space-between;}
+        #upload .in_area > input {height:30px; margin:50px 0;}
+        #upload .in_area > input:nth-child(1) {width:800px;}
+        #upload .in_area > input:nth-child(2) {width:350px;}
+        #upload .text_area .text {width:1200px; height:500px; margin-bottom:50px;}
+        #upload .btn_area {display:flex; justify-content:center;}
+        #upload .btn_area #submit {width:100px; height:50px; border:none; background-color:#000; color:#fff; cursor:pointer;}
+        .big_text {display:flex; justify-content:center;}
+        .big_text > h2{font-size:30px; font-weight:bold;}
+
+    </style>
+</head>
+<body>
+    <%- include("header",{title:"",hClass:"",css:["style.css"]}) %>
+    <div class="insert">
+        <form id="upload" action="/dbupload" method="post">
+            <div class="big_text">
+                <h2>게시글 등록</h2>
+            </div>
+            <div class="in_area">
+                <input class="title" type="" name="title" placeholder="제목을 입력하세요." required>
+                <input class="author" type="text" name="author" placeholder="작성자명" required>
+            </div>
+            <div class="text_area">
+                <textarea class="text" name="content" placeholder="내용을 입력하세요." required></textarea>
+            </div>
+            <div class="btn_area">
+                <button id="submit" type="submit">게시글 등록완료</button>
+            </div>
+        </form>
+    </div>
+    <%- include("footer") %>
+</body>
+</html>
